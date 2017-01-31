@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.jamaljones.proear.MainActivity"
+    android:clickable="false">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView"
+        android:src="@drawable/proearbackground"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#F4F6F6FF">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="4dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="4dp">
+
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Interval Recognition"
+                    android:id="@+id/intervalButton"
+                    android:layout_weight="1"
+                    android:background="@drawable/glossy_light_grey_button"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:layout_margin="4dp" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Interval Playback"
+                    android:id="@+id/intervalPlayButton"
+                    android:layout_weight="1"
+                    android:background="@drawable/glossy_light_grey_button"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:layout_margin="4dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="4dp">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pitch Recognition"
+                    android:id="@+id/pitchButton"
+                    android:layout_weight="1"
+                    android:background="@drawable/glossy_light_grey_button"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:layout_margin="4dp" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Melody Playback"
+                    android:id="@+id/melodyButton"
+                    android:layout_weight="1"
+                    android:background="@drawable/glossy_light_grey_button"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:layout_margin="4dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="4dp">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chord Recognition"
+                    android:id="@+id/chordButton"
+                    android:layout_weight="1"
+                    android:background="@drawable/glossy_light_grey_button"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:layout_margin="4dp" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chord Inversions"
+                    android:id="@+id/inversionButton"
+                    android:layout_weight="1"
+                    android:background="@drawable/glossy_light_grey_button"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:layout_margin="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

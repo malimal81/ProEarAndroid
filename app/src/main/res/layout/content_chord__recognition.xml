@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.jamaljones.proear.Chord_Recognition">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView2"
+        android:src="@drawable/proearbackground"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#F4F6F6FF"
+            android:layout_weight="5">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Menu"
+                android:id="@+id/menuButton"
+                android:textColor="#007AFF"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:background="#00000000"
+                android:soundEffectsEnabled="false"
+                android:paddingLeft="8dp"
+                android:layout_gravity="center_vertical|left"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Correct Answer Here"
+                android:id="@+id/answerLabel"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#29C95D"
+                android:gravity="center|center_vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:visibility="invisible" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:layout_gravity="center_vertical|right" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#F6F6FF">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Maj"
+                    android:id="@+id/majorButton"
+                    android:background="@drawable/glossy_light_grey_button"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:layout_margin="4dp"
+                    android:soundEffectsEnabled="false"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="min"
+                    android:id="@+id/minorButton"
+                    android:background="@drawable/glossy_light_grey_button"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:layout_margin="4dp"
+                    android:soundEffectsEnabled="false"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="dim"
+                    android:id="@+id/diminishedButton"
+                    android:background="@drawable/glossy_light_grey_button"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:layout_margin="4dp"
+                    android:soundEffectsEnabled="false"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Aug"
+                    android:id="@+id/augmentedButton"
+                    android:background="@drawable/glossy_light_grey_button"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:layout_margin="4dp"
+                    android:soundEffectsEnabled="false"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sus2"
+                    android:id="@+id/sus2Button"
+                    android:background="@drawable/glossy_light_grey_button"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:layout_margin="4dp"
+                    android:soundEffectsEnabled="false"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sus4"
+                    android:id="@+id/sus4Button"
+                    android:background="@drawable/glossy_light_grey_button"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:layout_margin="4dp"
+                    android:soundEffectsEnabled="false"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="7"
+                    android:id="@+id/sevenButton"
+                    android:background="@drawable/glossy_light_grey_button"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:layout_margin="4dp"
+                    android:soundEffectsEnabled="false"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="min7"
+                    android:id="@+id/minor7Button"
+                    android:background="@drawable/glossy_light_grey_button"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:layout_margin="4dp"
+                    android:soundEffectsEnabled="false"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="M7"
+                    android:id="@+id/major7Button"
+                    android:background="@drawable/glossy_light_grey_button"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:layout_margin="4dp"
+                    android:soundEffectsEnabled="false"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="M6"
+                    android:id="@+id/major6Button"
+                    android:background="@drawable/glossy_light_grey_button"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:layout_margin="4dp"
+                    android:soundEffectsEnabled="false"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="min6"
+                    android:id="@+id/minor6Button"
+                    android:background="@drawable/glossy_light_grey_button"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:layout_margin="4dp"
+                    android:soundEffectsEnabled="false"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="7#5"
+                    android:id="@+id/sevenSharp5Button"
+                    android:background="@drawable/glossy_light_grey_button"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:layout_margin="4dp"
+                    android:soundEffectsEnabled="false"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="7b5"
+                    android:id="@+id/sevenFlat5Button"
+                    android:background="@drawable/glossy_light_grey_button"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:layout_margin="4dp"
+                    android:soundEffectsEnabled="false"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="M7b3"
+                    android:id="@+id/major7Flat3Button"
+                    android:background="@drawable/glossy_light_grey_button"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:layout_margin="4dp"
+                    android:soundEffectsEnabled="false"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="m7b5"
+                    android:id="@+id/minor7Flat5Button"
+                    android:background="@drawable/glossy_light_grey_button"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:layout_margin="4dp"
+                    android:soundEffectsEnabled="false"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="7sus4"
+                    android:id="@+id/sevenSus4Button"
+                    android:background="@drawable/glossy_light_grey_button"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:layout_margin="4dp"
+                    android:soundEffectsEnabled="false"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="m7#5"
+                    android:id="@+id/minor7Sharp5Button"
+                    android:background="@drawable/glossy_light_grey_button"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:layout_margin="4dp"
+                    android:soundEffectsEnabled="false"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="9"
+                    android:id="@+id/nineButton"
+                    android:background="@drawable/glossy_light_grey_button"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:layout_margin="4dp"
+                    android:soundEffectsEnabled="false"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="min9"
+                    android:id="@+id/minor9Button"
+                    android:background="@drawable/glossy_light_grey_button"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:layout_margin="4dp"
+                    android:soundEffectsEnabled="false"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="M9"
+                    android:id="@+id/major9Button"
+                    android:background="@drawable/glossy_light_grey_button"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:layout_margin="4dp"
+                    android:soundEffectsEnabled="false"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="9#5"
+                    android:id="@+id/nineSharp5Button"
+                    android:background="@drawable/glossy_light_grey_button"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:layout_margin="4dp"
+                    android:soundEffectsEnabled="false"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="9b5"
+                    android:id="@+id/nineFlat5Button"
+                    android:background="@drawable/glossy_light_grey_button"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:layout_margin="4dp"
+                    android:soundEffectsEnabled="false"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="7b9"
+                    android:id="@+id/sevenFlat9Button"
+                    android:background="@drawable/glossy_light_grey_button"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:layout_margin="4dp"
+                    android:soundEffectsEnabled="false"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="9+"
+                    android:id="@+id/ninePlusButton"
+                    android:background="@drawable/glossy_light_grey_button"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:layout_margin="4dp"
+                    android:soundEffectsEnabled="false"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="6add9"
+                    android:id="@+id/sixAdd9Button"
+                    android:background="@drawable/glossy_light_grey_button"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:layout_margin="4dp"
+                    android:soundEffectsEnabled="false"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="11"
+                    android:id="@+id/elevenButton"
+                    android:background="@drawable/glossy_light_grey_button"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:layout_margin="4dp"
+                    android:soundEffectsEnabled="false"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="11+"
+                    android:id="@+id/elevenPlusButton"
+                    android:background="@drawable/glossy_light_grey_button"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:layout_margin="4dp"
+                    android:soundEffectsEnabled="false"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="13"
+                    android:id="@+id/thirteenButton"
+                    android:background="@drawable/glossy_light_grey_button"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:layout_margin="4dp"
+                    android:soundEffectsEnabled="false"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="13b9"
+                    android:id="@+id/thirteenFlat9Button"
+                    android:background="@drawable/glossy_light_grey_button"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:layout_margin="4dp"
+                    android:soundEffectsEnabled="false"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="13b9b5"
+                    android:id="@+id/thirteenFlat9Flat5Button"
+                    android:background="@drawable/glossy_light_grey_button"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:layout_margin="4dp"
+                    android:soundEffectsEnabled="false"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:background="#F6F6FF">
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar"
+                android:indeterminate="false"
+                android:max="20"
+                android:progress="1"
+                android:minHeight="8dp"
+                android:layout_gravity="center_vertical"
+                android:minWidth="80dp"
+                android:backgroundTintMode="add"
+                android:background="#AAAAAA"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Progress: 0"
+                android:id="@+id/progressTextView"
+                android:layout_weight="1"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#007AFF"
+                android:gravity="center|center_vertical"
+                android:layout_gravity="center_vertical" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play"
+                android:id="@+id/playButton"
+                android:textColor="#29C95D"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:background="#00000000"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:layout_marginRight="8dp"
+                android:paddingRight="8dp"
+                android:layout_gravity="center_vertical"
+                android:soundEffectsEnabled="false"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
